@@ -1,0 +1,73 @@
+<html>
+	<head>
+	<title>&#128498;Smite Tourney&#128498;</title>
+	<link rel="shortcut icon" href="../compiled/favicon.ico" type="image/x-icon">
+<link rel="icon" href="../compiled/favicon.ico" type="image/x-icon">
+		    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="../compiled/flipclock.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<script src="../compiled/flipclock.js"></script><link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+	</head>
+	<body>
+
+
+	<div class="container imgDiv">
+	<div class="header"><h2 style="margin:0px;">Welcome to the DPLAY.GG Tournament Countdown. We will be hosting our first SMITE Tournament this Sunday!</h2><hr><H1 style="color:white;text-align: center;font-size: 40px;font-kerning: normal;margin:0;">Prizing TBD&nbsp;—&nbsp;DPX&nbsp;Tokens&nbsp;+&nbsp;Gems</H1><hr><h1 style="text-align: center;margin-top:0;font-size: 60px;font-kerning: normal;"> June 8th @ 11am PST (&nbsp;2pm&nbsp;EST&nbsp;)</h1></div>
+
+	<div class="center" style="width: 100%;background-color: rgba(255,165,0,0.6);box-shadow: 0px -40px 0px rgba(255,165,0,0.6);">
+		<div class="clock" ></div></div>
+		<h1 style="text-shadow: 1px 1px orange;color:white;font-size: 55px;box-shadow: none;">Find out more Info: <a href="http://esports.dplay.gg/"> Dplay.GG Website</a></h1>
+		<a  href="http://esports.dplay.gg/auth/registration/create">
+	<div class="btn">Register Now!<h5 style="color:white;font-size:13px;font-family: Arial, Helvetica, sans-serif;margin:0;padding-top: 5px;"> (Takes you to registration Page)</h5></div></a>
+	
+	</div>
+
+	<div class="bodyText" style="background-color: #1c1c1c; ">
+	
+
+	</div>
+	<div class="footer">
+	<a  href="http://dplay.gg">
+		<img src="../compiled/DPLAYLogo.png" style="margin-left: 5%;">
+	</a>
+	<a  href="http://esports.dplay.gg/">
+		<img src="../compiled/DPLAYTournaments.png" style="margin-left:-30px;z-index: -2;margin-right: 10%;">
+	</a>
+
+	<img src="../compiled/DPLAYSocial.png" style="z-index: 2;">
+
+	<img src="../compiled/DPLAYToken.png" style="margin-left:-30px;z-index: -2;">
+
+	
+
+	</div>
+
+	</div>
+		<script type="text/javascript">
+			var clock;
+
+			$(document).ready(function() {
+
+				// Grab the current date
+				var currentDate = new Date();
+
+				// Set some date in the future. In this case, it's always Jan 1
+				var futureDate  = new Date(currentDate.getFullYear(), 6, 8);
+
+				// Calculate the difference in seconds between the future and current date
+				var diff = (futureDate.getTime() / 1000 + 3600*14) - currentDate.getTime() / 1000;
+
+				// Instantiate a coutdown FlipClock
+				clock = $('.clock').FlipClock(diff, {
+					clockFace: 'DailyCounter',
+					countdown: true
+				});
+			});
+		</script>
+		
+	</body>
+</html>
